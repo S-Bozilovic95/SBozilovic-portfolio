@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+.container {
+  width: 80%;
+  margin: auto; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    transition: 1s ease; }
+
+ul {
+  list-style-type: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Outfit', sans-serif; }
+
+p {
+  font-family: 'Montserrat', sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
