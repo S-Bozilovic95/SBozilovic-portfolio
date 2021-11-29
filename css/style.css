@@ -7,6 +7,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth; }
 
+body {
+  font-family: 'Montserrat', sans-serif; }
+
 .container {
   width: 80%;
   margin: auto; }
@@ -28,9 +31,6 @@ h5,
 h6 {
   font-family: 'Outfit', sans-serif; }
 
-p {
-  font-family: 'Montserrat', sans-serif; }
-
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Img/LaptopCoffe.jpg);
   background-position: center;
@@ -45,7 +45,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap; }
+    flex-wrap: nowrap; }
     header .container nav ul {
       display: flex;
       justify-content: space-between;
@@ -90,5 +90,56 @@ header {
     overflow: hidden;
     border-right: 4px solid;
     white-space: nowrap; }
+
+.about {
+  padding: 50px 0px;
+  color: #353631;
+  background-color: #f8f8f8; }
+  .about h2 {
+    text-align: center;
+    margin: 15px auto;
+    font-size: 3.4rem; }
+    .about h2::after {
+      display: block;
+      content: "";
+      width: 100px;
+      height: 4px;
+      background-color: #fec107;
+      margin: auto;
+      margin-bottom: 15px; }
+  .about .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .about .container article {
+      flex: 0 0 50%; }
+      .about .container article img {
+        width: 60%;
+        height: auto;
+        border-radius: 100%;
+        border: 5px solid #fec107;
+        margin-bottom: 10px;
+        box-shadow: 0 0 20px gray; }
+      .about .container article h3 {
+        font-size: 2.3rem;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif; }
+      .about .container article h4 {
+        font-size: 1.5rem;
+        padding-bottom: 5px;
+        font-weight: 400; }
+      .about .container article p {
+        font-size: 1.3rem;
+        font-weight: 400; }
+        .about .container article p i {
+          font-size: 1.3rem;
+          color: #fec107;
+          padding-bottom: 10px;
+          padding: 10px 7px 10px 0px; }
+        .about .container article p span {
+          font-weight: 700;
+          color: #353631; }
 
 /*# sourceMappingURL=style.css.map */
