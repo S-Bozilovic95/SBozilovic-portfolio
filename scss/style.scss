@@ -6,7 +6,7 @@ $white:white;
 $yellow:#fec107;
 $gray: gray;
 $lightgray: #f8f8f8;
-$transition: 1s ease;
+$transition: .7s ease;
 $padding:50px 0px;
 $typingFont: 'M PLUS 1 Code',
 sans-serif;
@@ -46,6 +46,7 @@ sans-serif;
     height: 4px;
     background-color: $yellow;
     margin: auto;
+    margin-top: 5px;
     margin-bottom: 15px;
 
 }
@@ -73,6 +74,16 @@ body {
 .container {
     width: 80%;
     margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 3.4rem;
+
+    &::after {
+        @include line();
+    }
 }
 
 a {
@@ -167,16 +178,6 @@ header {
     color: $dark;
     background-color: $lightgray;
 
-    h2 {
-        text-align: center;
-        margin: 15px auto;
-        font-size: 3.4rem;
-
-        &::after {
-            @include line();
-        }
-    }
-
     .container {
         @include flex(space-evenly, center, row, wrap);
 
@@ -189,7 +190,11 @@ header {
                 border-radius: 100%;
                 border: 5px solid $yellow;
                 margin-bottom: 10px;
-                box-shadow: 0 0 20px $gray;
+
+                &:hover {
+                    box-shadow: 0 0 20px $gray;
+                    transition: $transition;
+                }
             }
 
             h3 {
@@ -218,6 +223,56 @@ header {
                 span {
                     font-weight: 700;
                     color: $dark;
+                }
+            }
+        }
+    }
+}
+
+
+
+// SKILLS SECTION
+
+.skills {
+    padding: $padding;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../Img/wooden\ table\ typing.jpg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    h2 {
+        color: $lightgray
+    }
+
+    .container {
+        @include flex(center, center, row, wrap);
+
+        article {
+            @include flex(center, center, row, wrap);
+            position: relative;
+            flex: 0 0 25%;
+            font-size: 5rem;
+            margin: 40px;
+            color: $yellow;
+
+            i {
+                padding: 10px;
+
+                &:hover {
+                    color: $lightgray;
+                    transform: scale(1.2);
+                    transition: $transition;
+                }
+            }
+
+            h5 {
+                &:hover {
+                    color: $lightgray;
+                    transform: scale(1.2);
+                    transition: $transition;
                 }
             }
         }
