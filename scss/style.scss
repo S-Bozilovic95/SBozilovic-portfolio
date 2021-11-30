@@ -4,9 +4,9 @@ $dark:#353631;
 $lightDark:#51524c;
 $white:white;
 $yellow:#fec107;
-$gray: gray;
+$gray: rgb(133, 132, 132);
 $lightgray: #f8f8f8;
-$transition: .7s ease;
+$transition: .6s ease;
 $padding:50px 0px;
 $typingFont: 'M PLUS 1 Code',
 sans-serif;
@@ -78,8 +78,8 @@ body {
 
 h2 {
     text-align: center;
-    margin: 20px auto;
     font-size: 3.4rem;
+    padding-bottom: 30px;
 
     &::after {
         @include line();
@@ -255,7 +255,7 @@ header {
             position: relative;
             flex: 0 0 25%;
             font-size: 5rem;
-            margin: 40px;
+            margin: 20px;
             color: $yellow;
 
             i {
@@ -273,6 +273,66 @@ header {
                     color: $lightgray;
                     transform: scale(1.2);
                     transition: $transition;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// WORKS SECTION
+
+.works {
+    padding: $padding;
+    background-color: $lightgray;
+
+    .container {
+        @include flex(space-between, flex-start, column, wrap);
+
+        article {
+            flex: 0 0 28%;
+            margin-bottom: 25px;
+            @include flex(space-between, center, row, wrap);
+
+            &:hover {
+                box-shadow: 0 0 30px $gray;
+                transition: $transition;
+            }
+
+            div {
+                flex: 0 0 48%;
+                padding: 10px;
+
+                img {
+                    border: 4px solid $yellow;
+                    border-radius: 10px;
+                    width: 100%;
+                    height: auto;
+                }
+
+                h3 {
+                    font-size: 3rem;
+                    font-weight: 300;
+                    padding-bottom: 10px;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    padding-bottom: 10px;
+                }
+
+                a {
+                    font-size: 1.5rem;
+                    color: $yellow;
+                    font-weight: 300;
+
+
+                    &:hover {
+                        color: orangered;
+                        transition: $transition;
+                    }
                 }
             }
         }
