@@ -338,3 +338,35 @@ header {
         }
     }
 }
+
+
+
+// FOOTER SECTION
+
+
+footer {
+    background-color: $dark;
+    color: $yellow;
+    padding: $padding;
+    text-align: center;
+
+    .container {
+        @include flex(space-between, center, row, wrap);
+        padding-bottom: 45px;
+
+        a {
+            flex: 0 0 32%;
+            font-size: 3rem;
+            color: $yellow;
+
+            &:hover {
+                color: $lightgray;
+                transition: $transition;
+            }
+
+            p {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
