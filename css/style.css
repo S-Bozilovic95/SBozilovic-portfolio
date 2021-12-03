@@ -140,10 +140,10 @@ header {
           font-size: 1.7rem; } }
       @media (max-width: 480px) {
         header .container hgroup h1 {
-          font-size: 1.1rem; } }
+          font-size: 1.3rem; } }
       @media (max-width: 320px) {
         header .container hgroup h1 {
-          font-size: 0.9rem; } }
+          font-size: 1rem; } }
 
 .about {
   padding: 50px 0px;
