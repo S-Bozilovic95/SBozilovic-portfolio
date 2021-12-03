@@ -270,8 +270,7 @@ header {
       padding: 10px; }
       @media (max-width: 768px) {
         .works .container article div {
-          flex: 0 0 100%;
-          padding: 10px 0px; } }
+          flex: 0 0 100%; } }
       .works .container article div img {
         border: 4px solid #fec107;
         border-radius: 10px;
