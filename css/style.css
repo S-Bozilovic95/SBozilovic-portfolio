@@ -215,7 +215,7 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Img/wooden\ table\ typing.jpg);
   background-position: center;
   background-size: cover;
-  height: auto;
+  height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed; }
