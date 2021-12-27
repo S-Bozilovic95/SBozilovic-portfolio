@@ -340,7 +340,6 @@ header {
     background-size: cover;
     height: 100%;
     width: 100%;
-    background-repeat: no-repeat;
     background-attachment: fixed;
 
     h2 {
@@ -367,13 +366,6 @@ header {
                 }
             }
 
-            h5 {
-                &:hover {
-                    color: $lightgray;
-                    transform: scale(1.2);
-                    transition: $transition;
-                }
-            }
         }
     }
 }
