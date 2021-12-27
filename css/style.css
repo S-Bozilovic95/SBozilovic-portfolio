@@ -53,7 +53,7 @@ h6 {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Img/LaptopCoffe.jpg);
-  background-position: left;
+  background-position: center;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -61,6 +61,7 @@ header {
   background-attachment: fixed; }
   @media (max-width: 768px) {
     header {
+      height: 70vh;
       background-position: left;
       width: 100%; } }
   header .container nav {
@@ -117,6 +118,9 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     height: 60vh; }
+    @media (max-width: 768px) {
+      header .container hgroup {
+        height: 45vh; } }
     header .container hgroup h1 {
       font-size: 4rem;
       font-family: "M PLUS 1 Code", sans-serif;
