@@ -129,7 +129,7 @@ header {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -179,12 +179,8 @@ header {
                         }
 
                         @media(max-width:768px) {
-                            font-size: 1.3rem;
-
-                        }
-
-                        @media(max-width:480px) {
                             font-size: 1.2rem;
+
                         }
                     }
                 }
@@ -351,23 +347,15 @@ header {
         @include flex(center, center, row, wrap);
 
         article {
-            @include flex(center, center, row, wrap);
+            text-align: center;
+            padding: 10px;
             flex: 0 0 25%;
             font-size: 5rem;
-            margin: 20px;
             color: $yellow;
 
             i {
                 padding: 10px;
 
-                &:hover {
-                    color: $lightgray;
-                    transform: scale(1.2);
-                    transition: $transition;
-                }
-            }
-
-            h5 {
                 &:hover {
                     color: $lightgray;
                     transform: scale(1.2);
