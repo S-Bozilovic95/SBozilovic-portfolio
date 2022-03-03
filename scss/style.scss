@@ -264,17 +264,14 @@ header {
                 padding-bottom: 20px;
             }
 
-            img {
-                width: 60%;
-                height: auto;
-                border-radius: 100%;
-                border: 5px solid $yellow;
-                margin-bottom: 10px;
+            div{
+                padding: 20px 0px;
+            }
 
-                &:hover {
-                    box-shadow: 0 0 20px $gray;
-                    transition: $transition;
-                }
+            img {
+                width: 80%;
+                height: 100%;
+                margin-bottom: 10px;
             }
 
             h3 {
@@ -406,7 +403,7 @@ header {
                     border: 4px solid $yellow;
                     border-radius: 10px;
                     width: 100%;
-                    height: auto;
+                    
                 }
 
                 h3 {
@@ -442,6 +439,11 @@ header {
                         color: orangered;
                         transition: $transition;
                     }
+                }
+
+                span{
+                    margin: 5px;
+                    font-size: 1.2rem;
                 }
             }
         }
